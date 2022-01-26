@@ -1,0 +1,6 @@
+$component-name: 'l-footer';
+
+.#{$component-name}{
+    background-color: var(--color-green);
+    grid-area: footer;
+}

@@ -1,0 +1,20 @@
+$global-font-size: 14px;
+$global-max-width: 1200px;
+@import '../breakpoints/breakpoints';
+
+body{
+    font-family: Nunito,sans-serif;
+    font-size: $global-font-size;
+   
+    grid-template-areas: 
+    "header header header"
+    ". main ."
+    "footer footer footer";
+    grid-template-columns: 1fr $global-max-width 1fr;
+
+    @include breakpoint(large-up){
+        display: grid;
+        
+    }
+}
+

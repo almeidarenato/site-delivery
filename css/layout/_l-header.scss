@@ -1,0 +1,6 @@
+$component-name: 'l-header';
+
+.#{$component-name}{
+    background-color: var(--color-orange);
+    grid-area: header;
+}

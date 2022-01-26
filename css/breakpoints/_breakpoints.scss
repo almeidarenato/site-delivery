@@ -1,0 +1,27 @@
+@mixin breakpoint($point){
+    @if $point == small-only {
+        @media(max-width:37.43em){ // 599px
+            @content;
+        }
+    } @else if $point == small-up {
+        @media (min-width: 37.5em){ // 600px
+            @content;
+        }
+    } @else if $point == medium-only {
+        @media (max-width: 56.18em ){   //899px
+            @content;
+        }
+    } @else if $point == medium-up {
+        @media (max-width: 56.25em ){  //900px
+            @content;
+        }
+    } @else if $point == large-only {
+        @media (max-width: 74.93em ){  //1199px
+            @content;
+        }
+    } @else if $point == large-up {
+        @media (max-width: 75em ){  //1200px
+            @content;
+        }
+    }
+}

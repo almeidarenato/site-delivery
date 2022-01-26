@@ -1,0 +1,29 @@
+// Reset 
+// ------
+@import 'reset/reset';
+
+//--------
+// Layout
+//------
+
+@import 'layout/l-header';
+@import 'layout/l-main';
+@import 'layout/l-footer';
+
+//------
+// Elements
+//-------
+
+@import 'elements/elements';
+
+//----
+// Variables
+//----
+
+@import 'variables/variables';
+
+:root {
+    @each $name,$color in $project-colors {
+        --color-#{$name}:#{$color};
+    }
+}

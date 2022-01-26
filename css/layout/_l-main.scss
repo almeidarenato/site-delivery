@@ -1,0 +1,6 @@
+$component-name: 'l-main';
+
+.#{$component-name}{
+    background-color: var(--color-pastel);
+    grid-area: main;
+}
